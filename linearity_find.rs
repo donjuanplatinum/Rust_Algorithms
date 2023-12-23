@@ -1,9 +1,9 @@
 // get an array and a number , return the number's position in array 
 fn linearity_find<T: std::cmp::PartialEq>(a: &mut [T], v: T) -> Option<usize> {
-    let len = a.len();
+    let len = (*a).len();
     let mut i =  0;
     while i < len {
-        if a[i] != v {
+        if (*a)[i] != v {
             i = i + 1;
         } else {return Option::Some(i)};
     }

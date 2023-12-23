@@ -1,8 +1,8 @@
 fn select_insort<T: std::cmp::PartialOrd>(a: &mut [T]) {
-    let len = a.len();
+    let len = (*a).len();
     for i in 0..len {
         for t in i+1..len {
-            if a[t] < a[i] {
+            if (*a)[t] < a[i] {
                 a.swap(t,i);
             }
         }

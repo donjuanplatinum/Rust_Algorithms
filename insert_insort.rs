@@ -1,3 +1,4 @@
+
 fn insert_insort<T: std::cmp::PartialOrd>(arr: &mut[T]) {
     let len = (*arr).len();
     for index in 0..len {

@@ -4,4 +4,6 @@
 
 ## 目录
 
-1.  [![插入排序](./insert_insort.rs)]
+1.  ![插入排序](./insert_insort.rs)
+2.  ![线性查找](./linearity_find.rs)
+3.  ![选择排序](./select_insort.rs)

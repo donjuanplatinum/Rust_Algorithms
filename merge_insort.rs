@@ -2,8 +2,9 @@ fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
     let mut result = Vec::new();
     let mut left_index = 0;
     let mut right_index = 0;
-
-    while left_index < left.len() && right_index < right.len() {
+    let left_len: usize = left.len();
+    let right_len: usize = right.len();
+    while left_index < left_len && right_index < right_len {
         if left[left_index] < right[right_index] {
             result.push(left[left_index]);
             left_index += 1;
@@ -13,12 +14,12 @@ fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
         }
     }
 
-    while left_index < left.len() {
+    while left_index < left_len {
         result.push(left[left_index]);
         left_index += 1;
     }
 
-    while right_index < right.len() {
+    while right_index < right_len {
         result.push(right[right_index]);
         right_index += 1;
     }

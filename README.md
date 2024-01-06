@@ -9,3 +9,4 @@
 3.  ![选择排序](./select_insort.rs)
 4.  ![分治排序](./merge_insort.rs)
 5.  ![二分查找](./mid_find.rs)
+6.  ![冒泡排序](./bubble_sort.rs)

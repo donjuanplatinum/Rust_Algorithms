@@ -1,4 +1,23 @@
+use rand::{Rng, SeedableRng};
+use rand::distributions::Uniform;
+use rand::rngs::StdRng;
+
+
+fn generate_random_array() -> Vec<i32> {
+    let mut rng = StdRng::from_entropy(); // 从系统熵中生成种子
+    let range = Uniform::new(0, 100000); // 随机数范围
+    let mut random_numbers = Vec::with_capacity(1000000);
+
+    for _ in 0..10000000 {
+        random_numbers.push(rng.sample(range));
+    }
+
+    random_numbers
+}
+
+
 fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
+
     let mut result = Vec::new();
     let mut left_index = 0;
     let mut right_index = 0;
@@ -39,9 +58,11 @@ fn merge_sort(arr: &mut Vec<i32>) -> Vec<i32> {
 }
 
 fn main() {
-    let mut arr = vec![38, 27, 43, 3, 9, 82, 10];
-    println!("Original array: {:?}", arr);
+    let mut random_array = generate_random_array();
+//    let mut arr = vec![38, 27, 43, 3, 9, 82, 10];
+//    println!("Original array: {:?}", arr);
 
-    let sorted_arr = merge_sort(&mut arr);
+    let sorted_arr = merge_sort(&mut random_array);
     println!("Sorted array: {:?}", sorted_arr);
+    println!("sort finished!");
 }

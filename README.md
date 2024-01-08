@@ -10,3 +10,4 @@
 4.  ![分治排序](./merge_insort.rs)
 5.  ![二分查找](./mid_find.rs)
 6.  ![冒泡排序](./bubble_sort.rs)
+7.  ![二分和匹配](./sum_mid_find.rs)

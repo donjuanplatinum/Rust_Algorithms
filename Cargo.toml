@@ -38,3 +38,8 @@ path = "mid_find.rs"
 [[bin]]
 name = "select_insort"
 path = "select_insort.rs"
+
+#二分和查找
+[[bin]]
+name = "sum_mid_find"
+path = "sum_mid_find.rs"

@@ -1,3 +1,9 @@
+// 5 2 4 6 1 3 8 0
+// index = 1 , arr[index] = 2 , 5 > 2 , swap 5 and 2 , -> 2 5 4 ...
+// index = 2 , arr[index] = 4 , 5 > 4 , swap 4 and 5 , -> 2 4 5 ...
+// ...
+// -> 1 2 3 4 5 6 8 0 ;  index = len - 1 , arr[index] = 0 ,  8 > 0, swap 8 and 0 , -> 1 2 3 4 5 6 0 8 , 6 > 0 .... ,-> 0 1 2 3 4 5 6 8 
+
 use rand::{Rng, SeedableRng};
 use rand::distributions::Uniform;
 use rand::rngs::StdRng;
@@ -35,3 +41,5 @@ fn main() {
     let mut arr1: [i32;5] = arr.clone();
     insert_insort::<i32>(&mut random_array);
 }
+
+

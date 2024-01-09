@@ -1,3 +1,11 @@
+//  0 2 3 1 6 4 9 8
+//  0 | 2 | 3 | 1 | 6 | 4 | 9 | 8
+//  merge(0,2) merge(3,1) merge(6,4) merge(9,8)
+// -> 02 | 13 | 46 | 89 |
+//  merge(02,13) merge(46,89)
+// -> 0123 | 4689
+//  merge(0123,4689)
+// -> 01234689
 use rand::{Rng, SeedableRng};
 use rand::distributions::Uniform;
 use rand::rngs::StdRng;

@@ -1,7 +1,6 @@
 # Rust
 ## 本项目收集包含一些rust编写的算法和小程序.
 ### 欢迎Pull Requests
-
 ## 目录
 
 1.  ![插入排序](./insert_insort.rs)
@@ -10,4 +9,4 @@
 4.  ![分治排序](./merge_insort.rs)
 5.  ![二分查找](./mid_find.rs)
 6.  ![冒泡排序](./bubble_sort.rs)
-7.  ![二分和匹配](./sum_mid_find.rs)
+7.  ![和匹配](./sum_find.rs)

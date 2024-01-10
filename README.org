@@ -1,11 +1,19 @@
-* Rust
+* Rust算法
  本项目收集包含一些rust编写的算法和小程序.
- 欢迎Pull Requests
+ 本项目附带了每种算法的逐步分析 并且会逐步完善数学分析
+
 ** 目录
 *** 1.  [[./insert_insort.rs][插入排序]]
+**** TODO 插入排序数学分析
 *** 2.  [[./linearity_find.rs][线性查找]]
+**** TODO 线性查找数学分析
 *** 3.  [[./select_insort.rs][选择排序]]
+**** TODO 选择排序数学分析
 *** 4.  [[./merge_insort.rs][分治排序]]
+**** TODO 分治排序数学分析
 *** 5.  [[./mid_find.rs][二分查找]]
+**** TODO 二分查找数学分析
 *** 6.  [[./bubble_sort.rs][冒泡排序]]
-*** 7.  [[./sum_find.rs][和排序]]
+**** TODO 冒泡排序数学分析
+*** 7.  [[./sum_find.rs][和匹配]]
+**** TODO 和匹配数学分析

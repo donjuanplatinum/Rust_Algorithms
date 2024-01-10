@@ -17,3 +17,8 @@
 **** TODO 冒泡排序数学分析
 *** 7.  [[./sum_find.rs][和匹配]]
 **** TODO 和匹配数学分析
+
+** 运行
+#+begin_src shell
+  cargo build 
+#+end_src

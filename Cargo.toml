@@ -40,6 +40,16 @@ name = "select_insort"
 path = "select_insort.rs"
 
 #二分和查找
+#[[bin]]
+#name = "sum_mid_find"
+#path = "sum_mid_find.rs"
+
+#和匹配
 [[bin]]
-name = "sum_mid_find"
-path = "sum_mid_find.rs"
+name = "sum_find"
+path = "sum_find.rs"
+
+#暴力最大子数组
+[[bin]]
+name = "rude_max_subarray"
+path = "rude_max_subarray.rs"

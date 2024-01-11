@@ -22,7 +22,7 @@ fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
 // l                   r
 // 1 + 300 > 91  => right  -= 1
 // 1 + 200 > 91  => right  -= 1
-// 1 + 90  == 91  => Some((left,right))
+// 1 + 90  == 91  => Some((left))
 
 fn main() {
     let a = [1,2,3,4,5,6,7];

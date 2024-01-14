@@ -53,3 +53,18 @@ path = "sum_find.rs"
 [[bin]]
 name = "rude_max_subarray"
 path = "rude_max_subarray.rs"
+
+#分治最大子数组
+[[bin]]
+name = "merge_max_subarray"
+path = "merge_max_subarray.rs"
+
+#方阵乘法
+[[bin]]
+name = "square_matrix_multiply"
+path = "square_matrix_multiply.rs"
+
+#二分排序
+[[bin]]
+name = "mid_sort"
+path = "mid_sort.rs"

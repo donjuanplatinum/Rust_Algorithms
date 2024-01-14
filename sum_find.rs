@@ -26,10 +26,10 @@ fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
 
 fn main() {
     let a = [1,2,3,4,5,6,7];
-    let b = sum_mid_find::<i32>(&a, 8);
+    let b = sum_find::<i32>(&a, 8);
     println!("b is {:?}", b);
     let c = [1,2,3,4,5,6,7,8,9];
-    let d = sum_mid_find::<i32>(&c, 10);
+    let d = sum_find::<i32>(&c, 10);
     println!("d is {:?}", d);
 
     

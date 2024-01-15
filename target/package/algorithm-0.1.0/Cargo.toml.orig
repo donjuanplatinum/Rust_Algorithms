@@ -1,5 +1,5 @@
 [package]
-name = "algorithm_rust"
+name = "algorithm"
 version = "0.1.0"
 edition = "2021"
 authors = ["Donjuan Platinum <donjuan@lecturify.net>"]

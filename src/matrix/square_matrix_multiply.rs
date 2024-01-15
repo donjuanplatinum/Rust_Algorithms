@@ -1,4 +1,4 @@
-fn square_matrix_multiply<T, const Q: usize>(A: (usize, [T; Q]), B: (usize, [T; Q])) -> (usize, [T; Q])
+pub fn square_matrix_multiply<T, const Q: usize>(A: (usize, [T; Q]), B: (usize, [T; Q])) -> (usize, [T; Q])
 where
     T: std::ops::Add<Output = T> + Copy + Default  + std::ops::Mul<Output = T>,
 {
@@ -15,11 +15,11 @@ where
     C
 }
 
-fn main() {
+//fn main() {
     
-    let matrix = [1,2,3,4,5,6,7,8,9];
-    let A = (3,matrix);
-    let B = (3,matrix);
-    let C =square_matrix_multiply(A,B);
-    println!("matrix is {:?}", C);
-}
+//    let matrix = [1,2,3,4,5,6,7,8,9];
+//    let A = (3,matrix);
+//    let B = (3,matrix);
+//    let C =square_matrix_multiply(A,B);
+//    println!("matrix is {:?}", C);
+//}

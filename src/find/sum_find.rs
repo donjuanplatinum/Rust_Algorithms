@@ -1,4 +1,4 @@
-fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
+pub fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
     T: PartialOrd + std::ops::Add<Output = T> + Copy, {
     let mut left: usize = 0;
     let mut right: usize = (*array).len() -1 ;
@@ -24,14 +24,14 @@ fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
 // 1 + 200 > 91  => right  -= 1
 // 1 + 90  == 91  => Some((left))
 
-fn main() {
-    let a = [1,2,3,4,5,6,7];
-    let b = sum_find::<i32>(&a, 8);
-    println!("b is {:?}", b);
-    let c = [1,2,3,4,5,6,7,8,9];
-    let d = sum_find::<i32>(&c, 10);
-    println!("d is {:?}", d);
+//fn main() {
+//    let a = [1,2,3,4,5,6,7];
+//    let b = sum_find::<i32>(&a, 8);
+//    println!("b is {:?}", b);
+//    let c = [1,2,3,4,5,6,7,8,9];
+//    let d = sum_find::<i32>(&c, 10);
+//    println!("d is {:?}", d);
 
     
 
-}
+//}

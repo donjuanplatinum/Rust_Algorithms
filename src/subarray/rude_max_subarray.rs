@@ -1,4 +1,4 @@
-fn max_subarray<T>(array: &[T]) -> (usize,usize,T) where
+pub fn max_subarray<T>(array: &[T]) -> (usize,usize,T) where
     T: std::cmp::PartialEq + std::ops::Add<Output = T> + std::cmp::PartialOrd + std::ops::AddAssign + Copy, {
     let mut max: (usize,usize,T) = (0,0,(*array)[0]);
     for i in 0..(*array).len() - 1 {
@@ -15,8 +15,8 @@ fn max_subarray<T>(array: &[T]) -> (usize,usize,T) where
     max
 }
 
-fn main() {
-    let array = [1,3,2,-10,3,2,40,-20,-10,20,300,20,1];
-    let p = max_subarray(&array);
-    println!("the max_subarray = {:?}", p);
-}
+//fn main() {
+//    let array = [1,3,2,-10,3,2,40,-20,-10,20,300,20,1];
+//    let p = max_subarray(&array);
+//    println!("the max_subarray = {:?}", p);
+//}

@@ -6,25 +6,25 @@
 // -> 0123 | 4689
 //  merge(0123,4689)
 // -> 01234689
-use rand::{Rng, SeedableRng};
-use rand::distributions::Uniform;
-use rand::rngs::StdRng;
+//use rand::{Rng, SeedableRng};
+//use rand::distributions::Uniform;
+//use rand::rngs::StdRng;
 
 
-fn generate_random_array() -> Vec<i32> {
-    let mut rng = StdRng::from_entropy(); // 从系统熵中生成种子
-    let range = Uniform::new(0, 100000); // 随机数范围
-    let mut random_numbers = Vec::with_capacity(1000000);
+//fn generate_random_array() -> Vec<i32> {
+//    let mut rng = StdRng::from_entropy(); // 从系统熵中生成种子
+//    let range = Uniform::new(0, 100000); // 随机数范围
+//    let mut random_numbers = Vec::with_capacity(1000000);
 
-    for _ in 0..10000000 {
-        random_numbers.push(rng.sample(range));
-    }
+//    for _ in 0..10000000 {
+//        random_numbers.push(rng.sample(range));
+//    }
 
-    random_numbers
-}
+//    random_numbers
+//}
 
 
-fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
+pub fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
 
     let mut result = Vec::new();
     let mut left_index = 0;
@@ -54,7 +54,7 @@ fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
     result
 }
 
-fn merge_sort(arr: &mut Vec<i32>) -> Vec<i32> {
+pub fn merge_sort(arr: &mut Vec<i32>) -> Vec<i32> {
     if arr.len() <= 1 {
         return arr.clone();
     }
@@ -65,12 +65,12 @@ fn merge_sort(arr: &mut Vec<i32>) -> Vec<i32> {
     merge(left, right)
 }
 
-fn main() {
-    let mut random_array = generate_random_array();
+//fn main() {
+//    let mut random_array = generate_random_array();
 //    let mut arr = vec![38, 27, 43, 3, 9, 82, 10];
 //    println!("Original array: {:?}", arr);
 
-    let sorted_arr = merge_sort(&mut random_array);
-    println!("Sorted array: {:?}", sorted_arr);
-    println!("sort finished!");
-}
+//    let sorted_arr = merge_sort(&mut random_array);
+//    println!("Sorted array: {:?}", sorted_arr);
+//    println!("sort finished!");
+//}

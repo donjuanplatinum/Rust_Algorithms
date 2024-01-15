@@ -1,4 +1,4 @@
-fn cross_max_subarray<T>(array: &[T]) -> (usize, usize, T) 
+pub fn cross_max_subarray<T>(array: &[T]) -> (usize, usize, T) 
 where
     T: PartialOrd + std::ops::Add<Output = T> + std::ops::Sub<Output = T> + std::ops::AddAssign + Copy + Default
 {
@@ -32,7 +32,7 @@ where
 }
 
 
-fn merge_subarray<T>(array: &[T]) -> (usize, usize, T)
+pub fn merge_subarray<T>(array: &[T]) -> (usize, usize, T)
 where
     T: PartialOrd + std::ops::Add<Output = T> + std::ops::Sub<Output = T> + std::ops::AddAssign + Copy + Default
 {
@@ -54,8 +54,8 @@ where
     }
 }
 
-fn main() {
-    let array = [1,3,2,-10,3,2,40,-20,-10,20,300,20,1];
-    let p = merge_subarray(&array);
-    println!("the max_subarray = {:?}", p);
-}
+//fn main() {
+//    let array = [1,3,2,-10,3,2,40,-20,-10,20,300,20,1];
+//    let p = merge_subarray(&array);
+//    println!("the max_subarray = {:?}", p);
+//}

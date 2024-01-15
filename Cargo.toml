@@ -1,70 +1,14 @@
 [package]
-name = "rust_study"
+name = "rust_algorithms"
 version = "0.1.0"
 edition = "2021"
+authors = ["Donjuan Platinum <donjuan@lecturify.net>"]
+
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-rand = "0.8.5"
 
 
-#插入排序
-[[bin]]
-name = "insert_insort"
-path = "insert_insort.rs"
 
-#分治排序
-[[bin]]
-name = "merge_insort"
-path = "merge_insort.rs"
 
-#冒泡排序
-[[bin]]
-name = "bubble_sort"
-path = "bubble_sort.rs"
-
-#线性查找
-[[bin]]
-name = "linearity_find"
-path = "linearity_find.rs"
-
-#二分查找
-[[bin]]
-name = "mid_find"
-path = "mid_find.rs"
-
-#选择排序
-[[bin]]
-name = "select_insort"
-path = "select_insort.rs"
-
-#二分和查找
-#[[bin]]
-#name = "sum_mid_find"
-#path = "sum_mid_find.rs"
-
-#和匹配
-[[bin]]
-name = "sum_find"
-path = "sum_find.rs"
-
-#暴力最大子数组
-[[bin]]
-name = "rude_max_subarray"
-path = "rude_max_subarray.rs"
-
-#分治最大子数组
-[[bin]]
-name = "merge_max_subarray"
-path = "merge_max_subarray.rs"
-
-#方阵乘法
-[[bin]]
-name = "square_matrix_multiply"
-path = "square_matrix_multiply.rs"
-
-#二分排序
-[[bin]]
-name = "mid_sort"
-path = "mid_sort.rs"

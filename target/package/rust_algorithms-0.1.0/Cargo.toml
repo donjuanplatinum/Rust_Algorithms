@@ -14,5 +14,6 @@ edition = "2021"
 name = "rust_algorithms"
 version = "0.1.0"
 authors = ["Donjuan Platinum <donjuan@lecturify.net>"]
+license = "GPL2"
 
 [dependencies]

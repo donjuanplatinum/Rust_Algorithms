@@ -14,6 +14,7 @@ edition = "2021"
 name = "rust_algorithms"
 version = "0.1.0"
 authors = ["Donjuan Platinum <donjuan@lecturify.net>"]
+description = "some common rust_algorithms, Everyone can participate, and the project will continue to be updated, all the algorithms comes from <Introduction to Algorithms III>"
 license = "GPL2"
 
 [dependencies]

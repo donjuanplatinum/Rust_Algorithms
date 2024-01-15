@@ -47,6 +47,7 @@ max =     -3 -3  -3  -3 -3  -3   -3
 **** TODO 数学分析
 
 *** 10. [[./square_matrix_multiply.rs][一般方阵乘法]]
+*** 11. [[./square_matrix_add.rs][一般方阵加法]]
 ** 运行
 #+begin_src shell
   cargo build 

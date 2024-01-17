@@ -10,7 +10,9 @@ pub fn insert_insort<T: std::cmp::PartialOrd>(arr: &mut[T]) {
     }
 }
 
-fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
+fn merge<T>(left: Vec<T>, right: Vec<T>) -> Vec<T> where
+    T: std::cmp::PartialOrd + Copy,
+{
 
     let mut result = Vec::new();
     let mut left_index = 0;
@@ -40,7 +42,9 @@ fn merge(left: Vec<i32>, right: Vec<i32>) -> Vec<i32> {
     result
 }
 
-pub fn merge_sort(arr: &mut Vec<i32>) -> Vec<i32> {
+pub fn merge_sort<T>(arr: &mut Vec<T>) -> Vec<T> where
+    T: std::cmp::PartialOrd + Copy,
+{
     if arr.len() <= 1 {
         return arr.clone();
     }
@@ -74,3 +78,4 @@ pub fn select_insort<T: std::cmp::PartialOrd>(a: &mut [T]) {
     }
 }
 
+fn main() {}

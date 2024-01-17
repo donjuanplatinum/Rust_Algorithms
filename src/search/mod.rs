@@ -1,3 +1,5 @@
+///二分查找
+///O(log_{2}n)
 pub fn binary_search<T: std::cmp::PartialOrd>(arr: &[T], key: T) -> Option<usize> {
     let mut right: usize = (*arr).len() - 1;
     let mut left: usize = 0;

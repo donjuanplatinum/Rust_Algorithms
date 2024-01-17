@@ -1,5 +1,6 @@
 ///插入排序
 ///Θ(n^2)
+
 pub fn insertion_sort<T: std::cmp::PartialOrd>(arr: &mut[T]) {
     
     let len = (*arr).len();
@@ -11,7 +12,7 @@ pub fn insertion_sort<T: std::cmp::PartialOrd>(arr: &mut[T]) {
         }
     }
 }
-///示例
+
 
 fn merge<T>(left: Vec<T>, right: Vec<T>) -> Vec<T> where
     T: std::cmp::PartialOrd + Copy,
@@ -60,6 +61,8 @@ pub fn merge_sort<T>(arr: &mut Vec<T>) -> Vec<T> where
     merge(left, right)
 }
 
+///泡泡排序
+///O(n^2)
 pub fn bubble_sort<T: std::cmp::PartialOrd>(a: &mut[T]){
     for i in 0..(*a).len(){
 	for j in 0..(*a).len() -i -1 {

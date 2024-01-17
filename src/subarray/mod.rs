@@ -55,7 +55,7 @@ where
 }
 
 
-pub fn max_subarray<T>(array: &[T]) -> (usize,usize,T) where
+pub fn rude_ max_subarray<T>(array: &[T]) -> (usize,usize,T) where
     T: std::cmp::PartialEq + std::ops::Add<Output = T> + std::cmp::PartialOrd + std::ops::AddAssign + Copy, {
     let mut max: (usize,usize,T) = (0,0,(*array)[0]);
     for i in 0..(*array).len() - 1 {

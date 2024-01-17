@@ -1,4 +1,4 @@
-pub fn mid_find<T: std::cmp::PartialOrd>(arr: &[T], key: T) -> Option<usize> {
+pub fn binary_search<T: std::cmp::PartialOrd>(arr: &[T], key: T) -> Option<usize> {
     let mut right: usize = (*arr).len() - 1;
     let mut left: usize = 0;
     while left <= right {
@@ -14,7 +14,7 @@ pub fn mid_find<T: std::cmp::PartialOrd>(arr: &[T], key: T) -> Option<usize> {
     Option::<usize>::None
 }
 
-pub fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
+pub fn sum_search<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
     T: PartialOrd + std::ops::Add<Output = T> + Copy, {
     let mut left: usize = 0;
     let mut right: usize = (*array).len() -1 ;
@@ -36,7 +36,7 @@ pub fn sum_find<T>(array: &[T], sum: T) -> Option<(usize,usize)> where
 
 
 
-pub fn linearity_find<T: std::cmp::PartialEq>(a: &mut [T], v: T) -> Option<usize> {
+pub fn linearity_search<T: std::cmp::PartialEq>(a: &mut [T], v: T) -> Option<usize> {
     let len = (*a).len();
     let mut i =  0;
     while i < len {

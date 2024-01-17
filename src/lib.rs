@@ -1,4 +1,10 @@
+///排序算法
 pub mod sort;
+
+///矩阵算法
 pub mod matrix;
+///子数组算法
 pub mod subarray;
-pub mod find;
+
+///查找算法
+pub mod search;

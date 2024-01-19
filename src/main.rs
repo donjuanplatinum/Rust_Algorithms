@@ -21,4 +21,8 @@ fn main() {
     let a = [0,1,3,6,124,232,1312312];
     let c = crate::search::binary_search(&a,&7);
     println!("the c at {:?}", c);
+
+    let mut q = [1231,123,1234,125,3,3,56,745,856,0,4,867,1237,4564124,123];
+    crate::sort::heap_sort(&mut q);
+    println!("q is {:?}", q);
 }

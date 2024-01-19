@@ -16,9 +16,9 @@ fn main() {
     println!("matrix n is {:?}", n);
 
     let q = [-3,1,2,-8,9,0,2,-10,-5,-20,40,-90];
-    let c = crate::subarray::merge_subarray(&q);
+    let c = crate::subarray::merge_max_subarray(&q);
     println!("the max array is {:?}", c);
-    
-    let c = crate::search::binary_search(&a,32);
+    let a = [0,1,3,6,124,232,1312312];
+    let c = crate::search::binary_search(&a,&7);
     println!("the c at {:?}", c);
 }

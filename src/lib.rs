@@ -8,3 +8,7 @@ pub mod subarray;
 
 ///查找算法
 pub mod search;
+
+
+///数据结构
+pub mod structure;

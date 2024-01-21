@@ -23,6 +23,21 @@ fn main() {
     println!("the c at {:?}", c);
 
     let mut q = [1231,123,1234,125,3,3,56,745,856,0,4,867,1237,4564124,123];
-    crate::sort::heap_sort(&mut q);
+    crate::sort::heap_max_sort(&mut q);
     println!("q is {:?}", q);
+
+    let mut q = [1231,123,1234,125,3,3,56,745,856,0,4,867,1237,4564124,123];
+    crate::sort::heap_min_sort(&mut q);
+    println!("q is {:?}", q);
+
+    let mut  a  = algorithm_rust::structure::MaxPriorityQueue::new();
+    a.push(1);
+    a.push(8);
+    a.push(2);
+    a.push(4);
+    a.push(5);
+    for i in 0..=4 {
+	println!("the result is {:?}",a.pop());
+    }
+    
 }

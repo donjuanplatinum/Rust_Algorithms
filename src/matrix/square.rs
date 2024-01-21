@@ -1,3 +1,6 @@
+///方阵相加
+///
+///提供两个元组矩阵 格式为(行数, 数组)
 pub fn add<T, const Q: usize>(A: (usize, [T; Q]), B: (usize, [T; Q])) -> (usize, [T; Q])
 where
     T: std::ops::Add<Output = T> + Copy + Default ,
@@ -13,6 +16,10 @@ where
     C
 }
 
+
+///方阵乘法
+///
+///提供两个元组矩阵 格式为(行数, 数组)
 pub fn multiply<T, const Q: usize>(A: (usize, [T; Q]), B: (usize, [T; Q])) -> (usize, [T; Q])
 where
     T: std::ops::Add<Output = T> + Copy + Default  + std::ops::Mul<Output = T>,
@@ -29,5 +36,6 @@ where
     }
     C
 }
+
 
 

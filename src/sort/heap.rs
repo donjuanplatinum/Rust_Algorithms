@@ -1,6 +1,6 @@
 ///下滤
 ///复杂度为O(logn)
-pub fn max<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
+fn max<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
     loop {
         let mut largest = i;
         let left = 2 * i + 1;
@@ -23,13 +23,13 @@ pub fn max<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
     }
 }
 
-pub fn build_max<T: Ord>(arr: &mut [T]) {
+fn build_max<T: Ord>(arr: &mut [T]) {
     let n = arr.len();
     for i in (0..n / 2).rev() {
         crate::sort::max_heapify(arr, n, i);
     }
 }
-///小根堆排序
+///大根堆排序
 ///
 ///获取一个可变引用并排序
 pub fn max_sort<T: Ord>(arr: &mut [T]) {
@@ -45,7 +45,7 @@ pub fn max_sort<T: Ord>(arr: &mut [T]) {
 
 /// 上滤
 /// 复杂度为O(logn)
-pub fn min<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
+fn min<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
     loop {
         let mut smallest = i;
         let left = 2 * i + 1;
@@ -68,14 +68,14 @@ pub fn min<T: Ord>(arr: &mut [T], n: usize, mut i: usize) {
     }
 }
 
-pub fn build_min<T: Ord>(arr: &mut [T]) {
+fn build_min<T: Ord>(arr: &mut [T]) {
     let n = arr.len();
     for i in (0..n / 2).rev() {
         crate::sort::min_heapify(arr, n, i);
     }
 }
 
-/// 大根堆排序
+/// 小根堆排序
 ///
 /// 获取一个可变引用并排序
 pub fn min_sort<T: Ord>(arr: &mut [T]) {

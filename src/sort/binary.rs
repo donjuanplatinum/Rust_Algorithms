@@ -1,3 +1,4 @@
+///二分插入排序
 pub fn sort<T>(array: &mut[T]) ->() where
     T: Ord, {
     for i in 1..(*array).len() {

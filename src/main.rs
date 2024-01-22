@@ -39,5 +39,7 @@ fn main() {
     for i in 0..=4 {
 	println!("the result is {:?}",a.pop());
     }
-    
+    let mut a = [1,2,3,0,5,7,9,8,32,299,100];
+    crate::sort::quicksort(&mut a);
+    println!("a is {:?}",a);
 }

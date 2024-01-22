@@ -4,6 +4,7 @@ mod bubble;
 mod merge;
 mod selection;
 mod heap;
+mod quicksort;
 pub use self::insertion::sort as insertion_sort;
 pub use self::binary::sort as binary_sort;
 pub use self::bubble::sort as bubble_sort;

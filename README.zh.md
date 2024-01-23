@@ -6,36 +6,34 @@
 [![Chinese](./README.zh.md)](./README.zh.md)
 [![English](./README.md)](./README.md)
 
-Algorithms_Rust is an Rust algorithms lib, Contains many algorithms.
+Algorithm_rust是一个rust的算法库
 
-The project is continuously developing.
+## 算法
+### 排序
+1. 二分插入排序
+2. 泡泡排序
+3. 计数排序
+4. 堆排序
+5. 插入排序
+6. 分治排序
+7. 快速排序
+8. 基数排序
+9. 选择排序
 
-## Algorithms
-### Sort
-1. binary_sort
-2. bubble_sort
-3. count_sort
-4. heap_sort
-5. insertion_sort
-6. merge_sort
-7. quicksort
-8. radix_sort
-9. selection_sort
+### 矩阵操作
+1. 方阵相加
+2. 方阵乘法
 
-### Matrix
-1. square_matrix_add
-2. square_matrix_multiply
+### 查找
+1. 二分查找
+2. 线性查找
 
-### Search
-1. binary_search
-2. linearity_search
+### 数据结构
+1. 最大优先队列
 
-### Structure
-1. Maxpriorityqueue
+### 子数组
+1. 分治最大子数组
+2. 线性最大子数组
 
-### subarray
-1. merge_max_subarray
-2. rude_max_subarray
-
-## Welcome PR
+## 欢迎拉取请求
 

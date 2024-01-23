@@ -21,7 +21,7 @@ The project is continuously developing.
 7. quicksort
 8. radix_sort
 9. selection_sort
-
+10. pdqsort
 ### Matrix
 1. square_matrix_add
 2. square_matrix_multiply

@@ -50,6 +50,8 @@ fn main() {
     let mut a = [1,2,3,0,5,7,9,8,32,299,100];
     crate::sort::radix_sort(&mut a);
     println!("a is {:?}",a);
-
-
+    
+    let mut a = [1,2,3,0,5,7,9,8,32,299,100];
+    crate::sort::pdqsort(&mut a);
+    println!("a is {:?}",a);
 }

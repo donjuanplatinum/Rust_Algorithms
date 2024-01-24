@@ -59,4 +59,15 @@ fn main() {
     b.push(1);
     b.push(2);
     println!("the element is {:?}", b.pop());
+
+    let mut b = algorithm_rust::structure::LinkedList::new();
+    b.push(1);
+    b.push(9);
+    b.push(8);
+    let c = b.search(&9);
+    let c =match c {
+	Some(q) => println!("q is {:#?}",q),
+	None => println!("q is None"),
+    };
+
 }

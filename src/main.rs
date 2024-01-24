@@ -54,4 +54,9 @@ fn main() {
     let mut a = [1,2,3,0,5,7,9,8,32,299,100];
     crate::sort::pdqsort(&mut a);
     println!("a is {:?}",a);
+
+    let mut b = algorithm_rust::structure::Stack::new();
+    b.push(1);
+    b.push(2);
+    println!("the element is {:?}", b.pop());
 }

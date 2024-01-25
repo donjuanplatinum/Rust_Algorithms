@@ -2,13 +2,13 @@ name: Publish to Cargo
 
 on:
  push:
- branches: [ master ]
+  branches: [ master ]
 
 jobs:
  publish:
- runs-on: ubuntu-latest
+  runs-on: ubuntu-latest
 
- name: 'publish'
+  name: 'publish'
 
  # Reference your environment variables
  environment: cargo

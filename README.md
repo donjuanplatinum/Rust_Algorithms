@@ -32,7 +32,8 @@ The project is continuously developing.
 
 ### Structure
 1. Maxpriorityqueue
-
+2. Stack
+3. Linkedlist
 ### subarray
 1. merge_max_subarray
 2. rude_max_subarray

@@ -23,12 +23,10 @@ jobs:
   with:
   path: ~/.cargo
   key: ${{ runner.os }}-build-${{ env.cache-name }}
-
       - name: Install publish-action
   if: steps.cache-publish-action.outputs.cache-hit != 'true'
   run:
   cargo install publish-action
- 
       - name: Run publish-action
   run:
   publish-action

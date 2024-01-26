@@ -69,5 +69,9 @@
             Some(q) => println!("q is {:#?}",q),
             None => println!("q is None"),
         };
-
+	let  a = [1,2,3,0,5,7,9,8,32,299,100];
+	let c =algorithm_rust::search::max_search(&a);
+	println!("the max is {:?}",c);
+	let c =algorithm_rust::search::min_search(&a);
+	println!("the min is {:?}",c);
         }

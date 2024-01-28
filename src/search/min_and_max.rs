@@ -1,6 +1,6 @@
 ///同时找min和max
 ///只需要3(n/2)的代价
-fn find_min_max<T: PartialOrd + Copy>(arr: &[T]) -> Option<(T, T)> {
+pub fn find_min_max<T: PartialOrd + Copy>(arr: &[T]) -> Option<(T, T)> {
     if arr.is_empty() {
         return None;
     }

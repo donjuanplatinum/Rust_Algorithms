@@ -7,4 +7,4 @@ pub use self::binary::search as binary_search;
 pub use self::linearity::search as linearity_search;
 pub use self::max::max as max_search;
 pub use self::min::min as min_search;
-pub use self::min_and_max as min_and_max;
+pub use self::min_and_max::find_min_max as min_and_max;

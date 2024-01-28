@@ -1,10 +1,17 @@
 # Algorithms_Rust
-[![crates.io](https://img.shields.io/crates/dr/algorithm_rust)](https://crates.io/crates/algorithm_rust)
-[![Coverage Status](https://coveralls.io/repos/github/donjuanplatinum/Rust_Algorithms/badge.svg?branch=main)](https://coveralls.io/github/donjuanplatinum/Rust_Algorithms?branch=main)
-[![Version](https://img.shields.io/crates/v/algorithm_rust)](https://crates.io/crates/algorithm_rust)
+[![crates.io](https://img.shields.io/crates/dr/algori)](https://crates.io/crates/algori)
+[![Coverage Status](https://coveralls.io/repos/github/donjuanplatinum/Algori/badge.svg?branch=main)](https://coveralls.io/github/donjuanplatinum/algori?branch=main)
+[![Version](https://img.shields.io/crates/v/algori)](https://crates.io/crates/algori)
+
+<img src=./algori.png width="30%" >
+
+
 
 [![Chinese](./README.zh.md)](./README.zh.md)
 [![English](./README.md)](./README.md)
+
+
+
 
 Algorithms_Rust is an Rust algorithms lib, Contains many algorithms.
 
@@ -34,9 +41,14 @@ The project is continuously developing.
 1. Maxpriorityqueue
 2. Stack
 3. Linkedlist
+4. Complex
+
+
 ### subarray
 1. merge_max_subarray
 2. rude_max_subarray
 
+### Math
+1. DFT
 ## Welcome PR
 

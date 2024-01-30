@@ -1,7 +1,7 @@
 # Algorithms_Rust
-[![crates.io](https://img.shields.io/crates/dr/algorithm_rust)](https://crates.io/crates/algorithm_rust)
-[![Coverage Status](https://coveralls.io/repos/github/donjuanplatinum/Rust_Algorithms/badge.svg?branch=main)](https://coveralls.io/github/donjuanplatinum/Rust_Algorithms?branch=main)
-[![Version](https://img.shields.io/crates/v/algorithm_rust)](https://crates.io/crates/algorithm_rust)
+[![crates.io](https://img.shields.io/crates/dr/algori)](https://crates.io/crates/algori)
+[![Coverage Status](https://coveralls.io/repos/github/donjuanplatinum/Algori/badge.svg?branch=main)](https://coveralls.io/github/donjuanplatinum/Algori?branch=main)
+[![Version](https://img.shields.io/crates/v/algori)](https://crates.io/crates/algori)
 
 [![Chinese](./README.zh.md)](./README.zh.md)
 [![English](./README.md)](./README.md)
@@ -23,7 +23,7 @@ Algorithm_rust是一个rust的算法库
 ### 矩阵操作
 1. 方阵相加
 2. 方阵乘法
-
+3. 矩阵结构
 ### 查找
 1. 二分查找
 2. 线性查找
@@ -35,6 +35,7 @@ Algorithm_rust是一个rust的算法库
 ### 子数组
 1. 分治最大子数组
 2. 线性最大子数组
-
+### 数学算法与变换
+1. 离散傅立叶变换
 ## 欢迎拉取请求
 
